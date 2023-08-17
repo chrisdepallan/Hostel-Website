@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallan Accomodation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="dyno.js"></script>
+    <link rel="stylesheet" href="stylehome.css">
+        <script src="dynohome.js"></script>
+        <script src="dynoreg.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+    const parallax = document.querySelectorAll(".parallax");
+
+    window.addEventListener("scroll", function() {
+
+        let offset = window.pageYOffset;
+
+        parallax.forEach(function(prllx, i) {
+
+            console.log("Parallax " + i + ": " + prllx.offsetTop + " / Window: " + offset);
+
+            prllx.style.backgroundPositionY = (offset - prllx.offsetTop) * 0.7 + "px";
+
+            })
+
+        })
+
+    });
+        </script>
+</head>
+<body >
+    
+    <div class="container ">
+    <div class="top-bar">
+        <div class="logo-tab "><span></span><a href="home.html"><img src="Main Logo.png"></a></div>
+        <div class="home-tab "><span></span><a href="#home">HOME</a></div>
+        <div class="room-tab"><span></span><a href="#rooms">ROOMS</a></div>
+        <div class="service-tab"><span></span><a href="#service">SERVICES</a></div>
+        <div  class="rules-tab"><span></span><a href="#rules">RULES & POLICIES</a></div>
+        <div class="facilities-tab"><span></span><a href="#facilities">FACILITIES </a></div>
+        <div class="booking-tab"><span></span><a href="#booking">BOOK_NOW</a></div>
+    </div>
+
+    <div id="home" >
+        <div style=""class="homedesc">
+            <div style="display: flex;text-align:center;margin:200px">
+            
+            <h1>
+                PALLAN ACCOMODATIONS
+            </h1>
+            <p>
+                <h3>
+                <blockquote>"""
+                Always something for everyone...
+                <br>everywhere... everytime...""" 
+                </blockquote>
+                <h4>
+                    A chain of hostels all across the world which aim to provide safe,<br> productive and luxurious rooms.
+
+                </h4>
+                <h5>Make yourself at home</h5>
+                <br>
+                <h4><q>
+                    The student’s paradise</q>-hostel-review-mag<br>
+
+                    <q>Spend less, live more</q>-briton-youth<br>
+
+                    <q>Hostel business built to perfection.</q>-bloomberg<br>
+
+                    <q>Hostel business the best service around.</q>-desiboyz
+
+
+                </h4>
+            </h3>
+            </p>
+        </div>
+        <div>
+
+        </div>
+    </div>
+        <div ><div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                
+                <img src="hostel1.jpg"  height="1000px" width="1000px" class="d-block w-100" alt="..." >
+              </div>
+              <div class="carousel-item">
+                <img   src="hostel4.jpg" class="d-block w-100" height="1000px" width="1000px" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img  src="hostel5.jpg" height="1000px" width="1000px" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        
+    </div>
+    <div id="rooms" class="rooms">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Quas eum laudantium quae dicta harum magnam sequi aperiam <br>non quam sint assumenda, optio dolorum unde voluptatem minus minima tempore? Quibusdam, fugiat?
+    </div>
+    <div id="service">
+
+    </div>
+    <div id="rules">
+
+    </div>
+    <div id="facilities">
+
+    </div>
+    <div id="booking" class="parallax">
+        <center><form id="myForms" action="mailto:pallansaccomodation@gmail.com?subject=new_accomodation_request">
+            <div class="loginpad" style="display: flex;flex-direction: column;align-items: center;">
+              
+              <div class="logintags" style="margin:50px 100px 50px " >
+                User login
+              </div>
+              <div class="logintags" style="width:100px;margin: 10px 100px;">
+                USERNAME
+              </div>
+              <div class="logintags" style="margin:0px 140px">
+                <input class="form-control" style="" type="text" name="username" id="uname"><span id = "text1"></span>
+              </div>
+              <div class="logintags" style="width:100px;margin: 10px 100px;">
+                PASSWORD
+              </div>
+              <div class="logintags" style="margin:0px 140px">
+                <input class="form-control" style=""  name="passwd" type="password" id="passwd"><span id = "text2"></span>
+              </div>
+              <div class="logintags">
+                NAME
+
+              </div>
+              <div class="logintags" style="margin:0px 140px">
+                <input    type="text" name="email" id="name"  ><span id="text3"></span>
+              </div>
+              <div class="logintags">
+                EMAIL
+
+              </div>
+              <div class="logintags" style="margin:0px 140px">
+                <input    type="email" id="email" name="email" ><span id="text4"></span>
+              </div>
+              <div class="logintags">
+                PHONE NUMBER
+
+              </div>
+              <div class="logintags" style="margin:0px 140px">
+                <input    type="text" id="phno" name="phno"  ><span id="text5"></span>
+              </div>
+              
+              <div class="" style="margin:0px 140px">
+                <input class="form-control"  value="SUBMIT" style="" type="submit"  onclick="validate()">
+              </div>
+              <div class="reset">
+                <img src="reset.png" onclick="reset()">
+              </div>
+            </div>
+          </form>
+            </center>
+
+    </div>   
+    </div>
+</body>
+</html>
